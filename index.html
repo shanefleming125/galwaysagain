@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<title>Galway Ireland</title>
+<style>
+body { 
+  
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 100px 1fr 180px;  
+  grid-template-columns: 25% 1fr 0%;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: green;
+  }
+#pageHeader {
+  grid-area: header;
+  font-size: xx-large;
+  color: yellow;
+  
+  }
+
+#mainArticle { 
+   
+  font-size: x-large;
+  color: yellow; 
+  padding-bottom: 0%;
+  padding-top: 0%;
+  
+  }
+#mainNav { 
+  grid-area: nav;
+  font-size: x-large;
+  color: yellow; 
+  align-items: center
+  ;
+  }
+p{
+    font-family: sans-serif;
+    font-size: large;
+    color: white;
+    }
+
+ul{
+    font-size: x-large;
+    padding-left: 0%;
+}
+a:hover{
+  background-color: lightblue;
+  border-radius: 5px;
+}
+a:link{
+  color: yellow;
+}
+a:visited{
+  color: white;
+}
+@media all and (max-width: 500px)
+  body { 
+    grid-template-areas: 
+      "Galway Ireland"
+      "A Lovely Musical Town"
+      "Learn More"
+      "Galway's Offerings"
+      "Youtube Links";
+    grid-template-rows: 60px 1fr 50px 1fr 30px;  
+    grid-template-columns: 1fr;
+}
+
+</style>
+<body>
+  <header id="pageHeader">Galway Ireland</header>
+  <article id="mainArticle">A Lovely Musical Town
+    <p>Galway, located in West Ireland, is one of the Ireland's prized possessions. Every year, thousands of tourists flock to Galway to enjoy traditional Irish Food and Music. You a certain to find quaint irish pubs,
+        fantastic Irish music, and the most kindest people on the planet. The ocean air is  sure to wake you up after several pints of Guinness, and you are sure to emjoy the freshest seafood Ireland has to offer. 
+        
+        As you take a stroll the Quay St on a summer's night, you are sure to encounter street performs from accross Europe and Ireland. Many artists and musicians make their way to Galway every summer  to performs
+        for tourists. The street culture here is amazing and mind blowing! 
+        
+        <img src="galway.jpg" alt="Galway Ireland class="center" 
+        width="500"
+        height="400"
+        >
+        <table>
+    <tr>
+        <td>Population</td>
+          <td>479,856</td>
+        
+    </tr>
+    <tr>
+        <td>City Size</td>
+          <td>55 Square Miles</td>
+        
+    </tr>
+    <tr>
+        <td>Temps</td>
+          <td>55 Degrees Celsius</td>
+        
+    </tr>
+    <tr>
+        <td>Hotels</td>
+          <td>13 Hotels</td>
+       
+    </tr>
+</table>
+    </p>
+  </article>
+  <nav id="mainNav">Galway's Best Attractions
+        <ul><a href="https://www.frontdoorpub.com/" target="_blank">Best Irish Food in Galway</a></ul>
+        <ul><a href="https://www.viator.com/en-CA/Galway-attractions/The-Burren/d5156-a8469" target="_blank">The Burren!</a></ul>
+        <ul><a href="https://www.viator.com/en-CA/Galway-attractions/Dunguaire-Castle/d5156-a8461" target="_blank">Dunguaire Castle</a></ul>
+        <ul><a href="https://www.viator.com/en-CA/Aran-Islands/d51288-ttd" target="_blank">Aran Islands</a></ul>
+        <ul><a href="form.html">Reservations!</ul>
+   
+          
+          
+</nav>
+  
+  
+</body>
